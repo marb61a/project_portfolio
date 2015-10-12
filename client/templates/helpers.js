@@ -1,7 +1,7 @@
 Template.login.events({
     'submit .login-user' : function(event){
         var username = event.target.username.value;
-        var password = event.target.password.value
+        var password = event.target.password.value;
         
         Meteor.loginWithPassword(username, password, function(err){
             if(err){
