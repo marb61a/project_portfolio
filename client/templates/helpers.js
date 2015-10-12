@@ -20,3 +20,7 @@ Template.login.events({
 		return false;
     }
 });
+
+Template.layout.events({
+    
+});
