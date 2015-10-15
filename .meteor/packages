@@ -10,3 +10,5 @@ insecure
 aldeed:collection2
 cfs:standard-packages
 cfs:gridfs
+tsega:bootstrap3-datetimepicker
+momentjs:moment
