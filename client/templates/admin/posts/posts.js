@@ -1,5 +1,5 @@
 Template.add_post.events({
-    'submit add_post_form' : function(event){
+    'submit .add_post_form' : function(event){
         var title = event.target.title.value;
         var body = event.target.body.value;
 
