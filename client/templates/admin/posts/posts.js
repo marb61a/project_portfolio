@@ -17,6 +17,29 @@ Template.add_post.events({
     }
 });
 
+Template.edit_post.events({
+    'submit .edit_post_form' : function(event){
+        var title = event.target.title.value;
+        var body = event.target.body.value;
+
+        // Update Post
+        Posts.update({
+        	_id: this._id
+        },{
+        	$set:{
+        		title: title,
+        		body: body
+        	}
+        });
+
+        FlashMessages.sendSuccess("Post Updated");
+        Router.go('/admin/posts');
+
+        // Prevent Submit
+        return false;
+    }
+});
+
 Template.list_posts.events({
 	'click .delete_post': function(event){
 		if(confirm("Are you sure?")) {
