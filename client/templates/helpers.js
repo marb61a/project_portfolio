@@ -29,7 +29,7 @@ Template.login.events({
 });
 
 Template.layout.events({
-    'click .logout-user': function(event){
+	'click .logout-user': function(event){
 		Meteor.logout(function(err){
             if(err){
                 FlashMessages.sendError(err.reason);
@@ -44,8 +44,8 @@ Template.layout.events({
 	}
 });
 
-Template.registerHelper('formatDate',function(date){
-    return moment(date).format('MMMM Do YYYY, h:mm:ss a');
+Template.registerHelper('formatDate', function(date){
+	return moment(date).format('MMMM Do YYYY, h:mm:ss a');
 });
 
 Template.registerHelper('getSiteTitle', function(){

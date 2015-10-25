@@ -1,6 +1,6 @@
 Template.add_post.events({
-    'submit .add_post_form' : function(event){
-        var title = event.target.title.value;
+	'submit .add_post_form': function(event){
+		var title = event.target.title.value;
         var body = event.target.body.value;
 
         // Insert Post
@@ -14,12 +14,12 @@ Template.add_post.events({
 
         // Prevent Submit
         return false;
-    }
+	}
 });
 
 Template.edit_post.events({
-    'submit .edit_post_form' : function(event){
-        var title = event.target.title.value;
+	'submit .edit_post_form': function(event){
+		var title = event.target.title.value;
         var body = event.target.body.value;
 
         // Update Post
@@ -37,7 +37,7 @@ Template.edit_post.events({
 
         // Prevent Submit
         return false;
-    }
+	}
 });
 
 Template.list_posts.events({
